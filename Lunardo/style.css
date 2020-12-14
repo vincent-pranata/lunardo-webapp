@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Great+Vibes&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background:url(../../media/background.jpg);
+	background-size:cover;
+	color:black;
+}
+
+header{
+	height:270px;
+	background-color:black;
+	text-align:center;
+	color:white;
+	font-family: 'Great Vibes', Times New Roman;
+	font-size:200%;
+	line-height:0px;
+}
+
+header img{
+	height:50%;
+	padding:10px;
+}
+
+#menu {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	margin-bottom:10px;
+	z-index:1;
+	background-color:black;
+	height:40px;
+	border-bottom:3px solid #808080;
+	border-top:3px solid #808080;
+}
+
+#menu ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+#menu ul li{
+	float:left;
+	position:relative;
+}
+
+#menu ul li a{
+	display:block;
+	text-decoration:none;
+	color:white;
+	padding:10px 20px;
+	border-right:1px solid #636363;
+}
+
+#menu ul li a:hover{
+	background-color:white;
+	color:black;
+	cursor:pointer;
+}
+
+#menu ul li ul {
+	display:none;
+}
+
+#menu ul li:hover ul{
+	display:block;
+	position:absolute;
+}
+
+#menu ul li:hover ul li{
+	background-color:black;
+}
+
+#menu ul li:hover ul li a{
+	color:white;
+	width:150px;
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+}
+
+#menu ul li:hover ul li a:hover{
+	background-color:white;
+	cursor:pointer;
+	color:black;
+}
+
+.menuclicked {
+	background-color: grey;
+}
+
+#wrapper{
+	margin:auto;
+	min-width:300px;
+	max-width:85%;
+	overflow:hidden;
+	-moz-border-radius:30px;
+	-webkit-border-radius:30px;
+	box-shadow:1px 5px 5px 1px black;
+	background:url(../../media/wrapperbg.jpg);
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.article{
+	margin-top:0px;
+	overflow:hidden;
+	font-family: 'Courgette', Times New Roman;
+	background-color:#fffc;
+}
+
+.article h1, h2{
+	font-family: 'Great Vibes', Times New Roman;
+	font-size: 30px;
+}
+
+#aboutus{
+	min-height: 100vh;
+	padding-left:5px;
+	background-color: grey;
+	padding-bottom: 5px;
+	margin-left: 20px;
+	margin-right: 20px;	
+	margin-top:20px;
+}
+
+#aboutus h1{
+	text-align:center;
+}
+
+#aboutus p{
+	text-align:justify;	
+	padding-left:5px;
+	padding-right:15px;	
+}
+
+#info{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	flex-wrap: wrap;
+	display: flex;
+}
+
+#info h1{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#info img{
+	margin-left:auto;
+	margin-right:auto;
+	width: 75%;
+	height: 50%;
+}
+
+#standardSeat, #firstSeat{
+	width:50%;
+}
+	
+#infodescription h1{
+	text-align:center;
+}
+
+#infodescription p,ul,li {
+	text-align:justify;	
+	padding-right:5px;
+}
+	
+#pricetable{
+	min-height: 100vh;
+	margin-top:50px;
+	padding-left:5px;
+	background-color: silver;
+	padding-bottom: 5px;
+	margin-left: 20px;
+	margin-right: 20px;	
+	font-family: 'Courgette', Times New Roman;
+	margin-bottom:10px;
+	height:100vh;
+	text-align:center;
+}
+
+table{
+	width:75%;
+	height:50%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#pricetable table,tr, th, td{
+	border:1px solid #636363;
+	border-collapse:collapse;
+}
+
+#showingTime{
+	min-height: 100vh;
+	text-align:center;
+	margin-top:50px;
+	padding-left:5px;
+	background-color: lightslategray;
+	padding-bottom: 5px;
+	margin-left: 20px;
+	margin-right: 20px;	
+}
+
+#showingTime img{
+	width:40%;
+	height:100%;
+	padding-left: 5px;
+	float: left;
+}
+
+#movielist{
+	width:100%;
+}
+
+#movielist table {
+	display: inline;
+	border-collapse: collapse;
+}
+
+#ACT, #RMC, #ANM, #AHF{
+	margin-top:5px;
+	margin-bottom:10px;
+	padding:5px;
+	margin-left:20px;
+	margin-right:20px;
+	width:40%;
+	min-width:300px;
+	max-width:600px;
+	min-height:400px;
+	overflow:hidden;
+	border:3px solid #808080;
+	text-align:center;
+	display:inline-block;
+}
+
+#synopsis h1{
+	text-align:center;
+}
+
+#synopsis{
+	margin-left:auto;
+	margin-top:10px;
+	margin-right:auto;
+	border:1px solid #636363;
+	padding:5px;
+	width:95%;
+	max-width: 95%;
+	min-width: 250px;
+	min-height:50%;
+	content: "";
+ 	clear: both;
+  	display: table;
+}
+
+.description{
+	width: 50%;
+	height: 100%;
+	text-align:justify;
+	float:left;
+}
+
+.video{
+	overflow: hidden;
+	padding-top: 28.125%;
+	position: relative;
+	width: 50%;
+	height: 28.125%;
+	margin-top: 3%;
+}
+
+.video iframe{ 
+	border: 0;
+   	height: 100%;
+   	left: 10px;
+   	position: absolute;
+   	top: 0;
+   	width: 100%;
+}
+.booking{
+	float:left;
+	text-align: left;
+}
+
+#form{
+	display: none;
+	margin-left:auto;
+	margin-top:10px;
+	margin-right:auto;
+	border:1px solid #636363;
+	width:80%;
+	max-width: 80%;
+	min-width:250px;
+	min-height:50%;
+	text-align: left;
+	padding:10px;
+}
+
+.form{
+	min-width:400px;
+	width:49%;	
+	min-height:400px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+fieldset{
+	text-align: right;
+	border:none;
+}
+
+#standard, #first{
+	border: 1px solid #636363;
+	min-width:300px;
+	max-width:70%;
+}
+
+#bookingDetail{
+	text-align: left;
+}
+
+legend{
+	padding:10px;
+	margin:10px;	
+	text-align: left;
+}
+
+.movieInfo{
+	text-align: left;
+}
+
+#RMCsynopsis, #ANMsynopsis,#AHFsynopsis {
+	display: none;
+}
+
+#totalCost{
+	text-align:right;
+	padding-right:30%;
+}
+
+footer{
+	font-family: 'Courgette', Times New Roman;
+	padding-left:10px;
+	clear:both;
+	max-height:20%;
+	line-height:20px;
+	background-color:#fffc;
+}

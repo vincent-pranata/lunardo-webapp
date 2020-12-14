@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Great+Vibes&display=swap');
+header{
+    text-align:center;
+    font-family: 'Great Vibes', Times New Roman;
+    font-size:200%;
+}
+
+#wrapper{
+    padding-left: 5px;
+    margin:auto;
+    width:20%;
+	min-width:320px;
+	max-width:320px;
+	max-width:85%;
+	overflow:hidden;
+	-moz-border-radius:30px;
+	-webkit-border-radius:30px;
+	box-shadow:1px 5px 5px 1px black;
+}
+
+.info{
+    width:45%;
+}
+
+#company{
+    width:100%;
+}
+
+#orderTable{
+    height:50%;
+    padding-bottom: 10px;
+}
+
+table{    
+	margin-left:auto;
+    margin-right:auto;
+}
+
+table, tr, td, th{
+    border:1px solid #636363;
+	border-collapse:collapse;
+}
+
+footer{
+	font-family: 'Courgette', Times New Roman;
+	padding-left:10px;
+	clear:both;
+	max-height:20%;
+	line-height:40px;
+}
